@@ -492,4 +492,62 @@ footer p {
             padding: 0 1rem;
         }
     }
+
+    /* LOGO GRANDE EN PÁGINA DE INICIO */
+    .welcome {
+        text-align: center;
+        padding: 4rem 2rem;
+        background: linear-gradient(135deg, #ffffff 0%, #fff5f5 100%);
+        border-radius: 20px;
+        margin-bottom: 3rem;
+    }
+
+    .welcome h1 {
+        font-size: 2.5rem;
+        color: #2d3436;
+        margin-bottom: 2rem;
+        font-weight: 300;
+        /* Más delgado para que resalte el logo */
+    }
+
+    .logo-grande {
+        margin: 2rem auto;
+        max-width: 400px;
+        /* Controla el tamaño máximo */
+        width: 80%;
+        /* Responsive: se adapta */
+    }
+
+    .logo-grande img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s ease;
+    }
+
+    .logo-grande img:hover {
+        transform: scale(1.05);
+        /* Efecto suave al pasar el mouse */
+    }
+
+    .slogan {
+        font-size: 1.3rem;
+        color: #636e72;
+        font-style: italic;
+        margin-top: 2rem;
+    }
+
+    /* Responsive para móvil */
+    @media (max-width: 768px) {
+        .welcome h1 {
+            font-size: 2rem;
+        }
+
+        .logo-grande {
+            max-width: 300px;
+        }
+
+        .slogan {
+            font-size: 1.1rem;
+        }
+    }
 }
